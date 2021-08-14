@@ -1,0 +1,2 @@
+0:0:0:0:0:0:0:1 - - [14/Aug/2021:21:21:40 +0800] "GET /product/reduce?id=1 HTTP/1.1" 500 16742 http-bio-8001-exec-2 184
+0:0:0:0:0:0:0:1 - - [14/Aug/2021:21:21:40 +0800] "GET /favicon.ico HTTP/1.1" 500 16742 http-bio-8001-exec-1 187
