@@ -11,11 +11,11 @@ http://www.springframework.org/schema/context/spring-context.xsd
 http://www.springframework.org/schema/tx
 http://www.springframework.org/schema/tx/spring-tx.xsd">
 
-    <context:component-scan base-package="controller,service,mapper"></context:component-scan>
+    <context:component-scan base-package="controller,service,mapper"/>
     <tx:annotation-driven></tx:annotation-driven>
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
-        <property name="driver" value="com.mysql.jdbc.Driver"/>
-        <property name="url" value="jdbc:mysql://localhost:3306/ssm_zookeeper?setCharacterEncoder=utf8"/>
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/ssm_zookeeper?serverTimezone=GMT"/>
         <property name="username" value="root"/>
         <property name="password" value="123456"/>
     </bean>

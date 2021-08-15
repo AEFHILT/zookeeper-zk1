@@ -13,10 +13,10 @@ import java.util.UUID;
 @Service
 public class OrderServiceImpl implements OrderService {
 
-    @Autowired
+    @Autowired(required = false)
     private OrderMapper orderMapper;
 
-    @Autowired
+    @Autowired(required = false)
     private ProductMapper productMapper;
 
     @Override

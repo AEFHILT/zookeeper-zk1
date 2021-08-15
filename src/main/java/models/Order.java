@@ -8,16 +8,10 @@ import java.io.Serializable;
 public class Order implements Serializable {
 
     private String id;
-    private Integer pid;
-    private Integer userid;
+    private int pid;
+    private int userid;
 
     public Order() {
-    }
-
-    public Order(String id, Integer pid, Integer userid) {
-        this.id = id;
-        this.pid = pid;
-        this.userid = userid;
     }
 
     @Override
@@ -29,6 +23,12 @@ public class Order implements Serializable {
                 '}';
     }
 
+    public Order(String id, int pid, int userid) {
+        this.id = id;
+        this.pid = pid;
+        this.userid = userid;
+    }
+
     public String getId() {
         return id;
     }
@@ -37,19 +37,19 @@ public class Order implements Serializable {
         this.id = id;
     }
 
-    public Integer getPid() {
+    public int getPid() {
         return pid;
     }
 
-    public void setPid(Integer pid) {
+    public void setPid(int pid) {
         this.pid = pid;
     }
 
-    public Integer getUserid() {
+    public int getUserid() {
         return userid;
     }
 
-    public void setUserid(Integer userid) {
+    public void setUserid(int userid) {
         this.userid = userid;
     }
 }

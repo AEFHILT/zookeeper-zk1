@@ -7,15 +7,15 @@ import java.io.Serializable;
  */
 public class Product implements Serializable {
 
-    private Integer id;
+    private int id;
     private String productName;
-    private Integer stock;
-    private Integer version;
+    private int stock;
+    private int version;
 
     public Product() {
     }
 
-    public Product(Integer id, String productName, Integer stock, Integer version) {
+    public Product(int id, String productName, int stock, int version) {
         this.id = id;
         this.productName = productName;
         this.stock = stock;
@@ -32,11 +32,11 @@ public class Product implements Serializable {
                 '}';
     }
 
-    public Integer getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -48,19 +48,19 @@ public class Product implements Serializable {
         this.productName = productName;
     }
 
-    public Integer getStock() {
+    public int getStock() {
         return stock;
     }
 
-    public void setStock(Integer stock) {
+    public void setStock(int stock) {
         this.stock = stock;
     }
 
-    public Integer getVersion() {
+    public int getVersion() {
         return version;
     }
 
-    public void setVersion(Integer version) {
+    public void setVersion(int version) {
         this.version = version;
     }
 }
